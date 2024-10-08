@@ -2,6 +2,10 @@
 
 #first{
     background-color: red;
+    color: black;
+}
+#second{
+    color: azure;
 }
 
 #code{
