@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .id{
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 4px;
+            margin-right: 50px;
+        }
+        div >ul:hover{
+            background-color: red;
+        }
+        .div2{
+           /* display:none;*/  /* Whole part removed*/
+          /* visibility: hidden;*/  /*spacing remained */
+        }
+        div{
+            border: 2px solid blue;
+            display: flex;
+            display: inline-block;
+            margin-right: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="id">Home</div>
+    <div class="id div2">About us</div>
+    <div class="id">
+        <ul>
+            <li>See</li>
+        </ul>
+    </div>
+    <span>Log in</span>
+
+    <h2>flexbox</h2>
+    <div>Hallo</div>
+</body>
+</html>

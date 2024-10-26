@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yellow {
+            color: yellow;
+        }
+
+        #paragraph {
+            color: black;
+        }
+
+        /*  */
+        .white {
+            color: white;
+        }
+
+        .red {
+            color: red;
+        }
+
+        /*atributeselector*/
+        [data-x=a] {
+            color: violet;
+        }
+
+        /* Specificity of id selector(#) is 10*/
+
+        /*  a.harryclass.rohan-class[href]:hover
+
+
+            1. Type selector (a): This is an element selector (tag name), which adds 1 point.
+
+            2. Class selectors (.harryclass, .rohan-class): Each class selector adds 10 points. There are 2 class selectors, so 10 + 10 = 20 points.
+            3. Attribute selector ([href]): This adds 10 points.
+
+            4. Pseudo-class selector (:hover): A pseudo-class also adds 10 points.
+
+
+            So, the specificity calculation is:
+
+
+            Element selector: 1
+            Class selectors: 10 + 10 = 20
+            Attribute selector: 10
+            Pseudo-class selector: 10
+            Total specificity = 1 + 20 + 10 + 10 = 41
+        
+        */
+    </style>
+</head>
+
+<body>
+    <h1>Specificity</h1>
+    <h3 class="red yellow green white" data-x="a">Hallo guys</h3>
+
+
+
+</body>
+
+</html>
