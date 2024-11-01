@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid black;
+            outline: 2px solid rgba(90, 90, 90, 0.514);
+            margin-bottom: 20px;
+            margin-left: 4px;
+            padding: 2px;
+            height: 450px;
+            width: 80vw;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            background-color: red;
+            position: relative;
+            /*position: sticky;
+            top: 0px;
+            padding: 0;
+            margin: 0;
+            height :30vh;*/
+
+
+        }
+
+        .box2 {
+            background-color: rgb(236, 178, 178);
+            position: relative;
+            bottom: 25px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .box3 {
+            background-color: aqua;
+            position: relative;
+
+        }
+
+        .box4 {
+            background-color: blueviolet;
+            position: relative;
+            bottom: 10px;
+            right: 30px;
+
+        }
+
+        /* Position --> /*Fixed*/ means fixed wrt the others contend if we want to scrolll thr pages 
+        
+
+
+        .parent {
+            margin: 50px;
+            padding: 6px;
+            border: 2px solid rgb(81, 133, 4);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+
+</body>
+
+</html>
