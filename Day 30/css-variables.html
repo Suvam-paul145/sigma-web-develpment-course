@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    ., initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: rgb(211, 70, 181);
+            --seccolor: rgb(35, 216, 41);
+            --padding: 20px;
+            --opacity:0.6;
+        }/*Globally declared*/
+
+        div :first-child{
+            background-color: var(--seccolor);
+            display: flex;
+            list-style: none;
+            
+        }
+        ul{
+            padding: var(--padding);
+            opacity: var(--opacity);
+        }
+        div ul li{
+            padding: 30px;
+            --color: rgb(205, 205, 247);/*Locally declared */
+            background-color: var(--color);
+        }
+        p{
+            color: var(--color);
+            border: 2px solid var(--color);
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore tempore voluptatem molestias officia
+            magnam ducimus? Id blanditiis aut dignissimos veniam eaque, totam eius quidem labore ipsa asperiores
+            perspiciatis nesciunt voluptatem temporibus voluptate obcaecati consequuntur iusto aliquid sapiente dolorem
+            ut eveniet? Dolorem similique omnis totam.</p>
+    </div>
+
+</body>
+
+</html>
