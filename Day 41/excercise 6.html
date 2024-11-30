@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+
+        .items {
+            position: relative; /* Necessary for dropdown positioning */
+        }
+
+        .items a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .dropdown {
+            display: none; /* Hidden by default */
+            position: absolute;
+            top: 100%; /* Position below the parent */
+            left: 0;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown li a {
+            padding: 10px 15px;
+            display: block;
+            text-align: left;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown li a:hover {
+            background-color: #f4f4f4;
+        }
+
+        .items:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="items">
+            <a href="#">Products</a>
+            <ul class="dropdown">
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+            </ul>
+        </div>
+        <div class="items">
+            <a href="#">Pricing</a>
+            <ul class="dropdown">
+                <li><a href="#">Plan 1</a></li>
+                <li><a href="#">Plan 2</a></li>
+                <li><a href="#">Plan 3</a></li>
+            </ul>
+        </div>
+        <div class="items">
+            <a href="#">Resources</a>
+            <ul class="dropdown">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="items">
+            <a href="#">About Us</a>
+            <ul class="dropdown">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
