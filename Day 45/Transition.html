@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: red;
+            height: 40px;
+            width: 80px;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            /* instead of writing the four line combination is transition : 4s all ease-in-out 1s */
+
+        }
+
+        .containar {
+            background-color: rgb(194, 193, 200);
+            height: 800px;
+            width: 6000px;
+        }
+
+        .transition {
+            transform:
+                /*translateX(10ovw) translateY(20vw)*/
+                rotate(40deg) translateX(40px) translateY(50px);
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="containar">
+        <div class="box transition">
+
+        </div>
+    </div>
+</body>
+
+</html>
