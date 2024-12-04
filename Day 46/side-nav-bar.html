@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 80vh;
+            width: 70vw;
+            background-color: yellowgreen;
+            position: relative;
+        }
+
+        .body {
+            height: 10vh;
+            width: 10vw;
+            background-color: rgb(32, 255, 16);
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: none;
+            /* Hidden by default */
+            background-color: white;
+            padding: 10px;
+        }
+
+        .nav-bar:hover ul {
+            display: block;
+            /* Show on hover */
+        }
+
+        .nav-bar ul li {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .nav-bar ul li:hover {
+            background-color: rgb(132, 0, 255);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="body">
+            <!-- Add content here if needed -->
+        </div>
+        <div class="nav-bar">
+            <h3>nav-bar</h3>
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Resources</li>
+                <li>Dashboard</li>
+                <li>Contact Us</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

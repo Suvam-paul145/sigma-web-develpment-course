@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs Animation </title>
+    <style>
+        .container {
+            background-color: rgb(108, 180, 94);
+            height: 80vh;
+            width: 80vw;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 10vh;
+            width: 10vw;
+            animation: suvampaul 3s ease-in 1s infinite both,
+                        suvam2 3s ease-in-out 1s infinite both; /* within one animation addd multiple animations*/
+            /*animation-play-state: pause 
+            animationm-fil-mode: 
+            */
+            animation-fill-mode: both;
+        }
+        /* Multiple animation */
+
+        @keyframes suvampaul {
+            from {
+                transform: translateX(0) rotate(0deg);
+            }
+
+            to {
+                transform: rotate(25deg) translateX(1000px);
+
+            }
+        }
+
+        @keyframes suvam2{
+            30% {
+                background-color: rgb(179, 251, 255);
+            }
+
+            50% {
+                background-color: rgb(255, 181, 181);
+
+            }
+
+            100% {
+                background-color: rgb(52, 0, 97);
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>
