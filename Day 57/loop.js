@@ -23,7 +23,7 @@ for (const key in obj) {
         console.log(key);                
     //}
 }
-  // used for for print te elements of a string you  have to givethe string values
+  // used for for print te elements of a string you  have to give the string values
 
 for (const element of "suvam Paul") {
     console.log(element);
