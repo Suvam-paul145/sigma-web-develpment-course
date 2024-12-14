@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            top: 0;
+            height: 80vh;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #nav-items {
+            height: 62px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            column-gap: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav id="nav-items">
+            <span>
+                <img src="assets\images\logo.svg" alt="Logo">
+            </span>
+            <div>
+                <span>English</span>
+                <span>Sign In</span>
+            </div>
+
+        </nav>
+        <div class="box">
+            <img src="C:\Users\suvam\Desktop\VS code\sigmawebdev by Suvam paul\Day 53\assets\images\bg.jpg" alt="image 1">
+        </div>
+    </div>
+</body>
+
+</html>
