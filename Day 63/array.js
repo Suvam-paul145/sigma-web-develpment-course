@@ -25,11 +25,43 @@ let a = [1, 2, 3, 4, 5, "Suvam "];
 // }
 
 
-console.log(a.indexOf(5));
-console.log(a.concat([100, 500]), a.length);
-console.log(a);
-console.log(typeof a); // typeof array is always object
-console.log(a.toString());
+// console.log(a.indexOf(5));
+// console.log(a.concat([100, 500]), a.length);
+// console.log(a);
+// console.log(typeof a); // typeof array is always object
+// console.log(a.toString());
 
-console.log(a.reverse());
-console.log(a.join(" and "));
+// console.log(a.reverse());
+// console.log(a.join(" and "));
+// a.push(23)
+// console.log(a);
+// let newArr = a;
+// //map 
+newArr = a.map((e) => {
+    return e ** 2
+})
+
+console.log(newArr);
+
+// filter 
+
+const greaterThanFive = (e, index, array) => {
+    if (e > 5) {
+        return true;
+    }
+    else
+        return false
+}
+newArr.filter(greaterThanFive);
+
+const red = (a,b ) =>{
+    return a*b;
+}
+
+console.log(newArr.reduce(red));
+
+
+// console.log(newArr);
+  let arr = ["Suvam"];
+  console.log(arr.form);
+  
