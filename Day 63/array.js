@@ -29,7 +29,7 @@ let a = [1, 2, 3, 4, 5, "Suvam "];
 // console.log(a.concat([100, 500]), a.length);
 // console.log(a);
 // console.log(typeof a); // typeof array is always object
-// console.log(a.toString());
+ console.log(a.toString());
 
 // console.log(a.reverse());
 // console.log(a.join(" and "));

@@ -49,5 +49,6 @@ else if (random >= 0.33 && random < 0.66) {
 else {
     third = "Hub";
 }
+
 console.log(first + second + third)  // or you can write it also **console.log(` ${first} ${second} ${third}`);
 
