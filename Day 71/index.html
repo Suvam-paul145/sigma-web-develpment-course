@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 12</title>
+    <style>
+        .boxes {
+            height: 45px;
+            width: 45px;
+            padding: 45px;
+            border: 2px solid rgb(232, 122, 122);
+            margin-bottom: 2px;
+        }
+
+        img {
+            display: flex;
+            /*  object-fit: cover*/
+            height: 100px;
+            width: auto;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div> Hey i am Suvam paul</div>
+        <div data-createdby="Suvam"><img
+                src="https://themeisle.com/blog/wp-content/uploads/2024/06/Online-Image-Optimizer-Test-Image-JPG-Version.jpeg"
+                alt=""></div>
+        <div class="boxes" id="Box1">Box 1</div>
+
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "Hi i am inner html <b> I am Suvam Paul </b>"
+        document.querySelector(".container").before(div);
+
+        /* insert inner html 
+        */
+        document.querySelector(".boxes").insertAdjacentHTML("beforebegin", "Hello i am a inserted element");
+
+        /*class lists  */
+        // 1. insert
+        // 2. remove
+        // 3. toggle  (if it is apply in the ekement then it removes from  that element and if it is not apply on the element the add  it by using the toogle)
+
+        document.querySelector(".boxes").classList.add("red");
+
+    </script>
+</body>
+
+</html>
